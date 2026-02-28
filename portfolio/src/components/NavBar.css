@@ -1,0 +1,35 @@
+/* NAV BAR */
+#nav-bar {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.shrink {
+    flex-shrink: 1;
+}
+
+.nav-title {
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.nav-links {
+    flex-shrink: 1;
+    display: flex;
+    gap: 10px;
+    line-height: 26px;
+}
+
+.menu-item {        
+    display: inline-block;
+    padding: 10px 10px;
+    opacity: .9; 
+    flex-shrink: 1;
+}

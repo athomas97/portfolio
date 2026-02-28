@@ -1,13 +1,182 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+    scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: #0B0710;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-size: 40px 40px;
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);   
+    overflow-x: hidden;    
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #130f18;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #d6d6d6;
+    border-radius: 50px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b8b4be;
+  }
+
+/* TEXT */
+h1, h2, h3, p {
+    display: inline;
+}
+
+h1, h2, .program-card {
+    font-family: 'Fugaz One';
+}
+.program-card {
+    font-size: 20px;
+}
+
+#ally-text, p, .menu-item, h1, h2, h3 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-family: 'JetBrains Mono';
+    font-weight: bold;
+    opacity: 0.7;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+h2 {
+    line-height:1.5em;
+    font-size: 40px;
+}
+
+p {
+    line-height: 2em;
+}
+
+p, .nav-links {
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.sub-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 1%;
+
+    font-family: 'Fugaz One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 82px;  
+
+    color: white;
+    text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.15);
+}
+
+.sub-title-outline {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+
+    font-family: 'Fugaz One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 82px;  
+
+    color: rgb(0, 0, 0, 0.2);
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    text-stroke: 2px rgb(255, 255, 255);
+}
+
+.hover-underline-animation-bluegreen, .hover-underline-animation-yellowpink, .hover-underline-animation-bluecyan {
+    display: inline-block;
+    position: relative;
+}
+.hover-underline-animation-bluegreen::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, #10E4F1 0%, #A9F110 100%, #10F14F 100%);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.15);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-underline-animation-yellowpink::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, #D8AF45 0%, #BC1CCC 100%);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.15);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-underline-animation-bluecyan::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, #4554D8 0%, #1CCCC1 100%);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.15);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-underline-animation-bluegreen:hover::after, .hover-underline-animation-yellowpink:hover::after, .hover-underline-animation-bluecyan:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Scroll Button */
+.scroll-up {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+.scroll-button {
+    z-index: 1; 
+    position: fixed; 
+    width: 80px; 
+    height: 80px; 
+    right: 20px; 
+    bottom: 20px;
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.1));
+    transition: .5s;
+}
+
+.scroll-button:hover {
+    filter: drop-shadow(0px 0px 25px rgba(255, 255, 255, 0.2));
+    transform: translateY(-10px);
+}
+
+@media (max-width: 800px) {
+    .scroll-button {
+        display: none;
+    }
 }

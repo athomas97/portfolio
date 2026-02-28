@@ -1,0 +1,32 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+}
+
+.social-links-container a {
+    display: contents;
+}
+
+.social-img {
+    min-width: 100px;
+    width: 7%;
+    transition: .5s;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.1));
+}
+
+.social-img:hover {
+    transform: translateY(-20px);
+    filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.2));
+}
+
+.sub-title-outline {
+    margin: 0;
+}

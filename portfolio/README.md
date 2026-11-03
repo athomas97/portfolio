@@ -27,6 +27,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+## GitHub Pages deployment
+
+Pushing to `main` runs `.github/workflows/deploy-pages.yml` and deploys the
+production build to https://athomas97.github.io/portfolio. In the repository's
+**Settings → Pages**, set the build and deployment source to **GitHub Actions**.
+
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`

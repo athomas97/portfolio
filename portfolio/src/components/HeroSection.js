@@ -2,7 +2,7 @@ import React from 'react';
 
 function HeroSection() {
     return (
-        <div className="home-container section-break">
+        <div className="home-container">
             <div id="about-container">
                 <div id="about-text-container">
                     <div>

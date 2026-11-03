@@ -12,7 +12,7 @@ function NavBar() {
               href="#technologies"
             >
               Technologies
-            </a>
+            </a> */}
             <a
               className="menu-item hover-underline-animation-bluecyan"
               href="#projects"
@@ -24,7 +24,7 @@ function NavBar() {
               href="#contact"
             >
               Contact
-            </a> */}
+            </a>
         </div>
     </nav>
   );

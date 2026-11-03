@@ -1,8 +1,13 @@
 .App {
   display: flex;
   flex-direction: column;
-  gap: 60px;
   text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
 }
 
 .App-logo {

@@ -11,10 +11,6 @@
     gap: 2%;
 }
 
-.social-links-container a {
-    display: contents;
-}
-
 .social-img {
     min-width: 100px;
     width: 7%;

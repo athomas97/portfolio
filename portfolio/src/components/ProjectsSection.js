@@ -76,7 +76,11 @@ function ProjectsSection() {
                             </div>
                             <div className="buttons-section">
                                 <div>
-                                    <a target="_blank" href={project.liveDemoLink}>
+                                    <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href={project.liveDemoLink}
+                                    >
                                         <button
                                             type="button"
                                             className={`primary-button ${project.gradient}`}
@@ -86,7 +90,11 @@ function ProjectsSection() {
                                     </a>
                                 </div>
                                 <div>
-                                    <a target="_blank" href={project.codeLink}>
+                                    <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href={project.codeLink}
+                                    >
                                         <button
                                             type="button"
                                             className="secondary-button"

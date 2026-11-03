@@ -1,5 +1,4 @@
 import React from 'react';
-import './NavBar.css';
 
 function NavBar() {
   return (
@@ -8,9 +7,24 @@ function NavBar() {
             <a className="menu-item grow" href="index.html"><h2>ALLY THOMAS</h2></a>
         </div>            
         <div className="nav-links">
-            <span className="menu-item hover-underline-animation-bluegreen">Web Developer</span>
-            <span className="menu-item hover-underline-animation-yellowpink">UI</span>
-            <span className="menu-item hover-underline-animation-bluecyan">Video Editor</span>
+            {/* <a
+              className="menu-item hover-underline-animation-bluegreen"
+              href="#technologies"
+            >
+              Technologies
+            </a>
+            <a
+              className="menu-item hover-underline-animation-bluecyan"
+              href="#projects"
+            >
+              Projects
+            </a>
+            <a
+              className="menu-item hover-underline-animation-yellowpink"
+              href="#contact"
+            >
+              Contact
+            </a> */}
         </div>
     </nav>
   );

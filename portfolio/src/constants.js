@@ -25,7 +25,7 @@ export const PROJECTS = {
     technology: [
       TECHNOLOGIES.REACT, TECHNOLOGIES.PYTHON, TECHNOLOGIES.STRIPE
     ],
-    image: `${process.env.PUBLIC_URL}/img/projects/ecommerce.png`,
+    image: `${process.env.PUBLIC_URL}/video/ecommerce.mp4`,
     liveDemoLink: 'https://athomas97.github.io/ecommerce_website/',
     codeLink: 'https://github.com/athomas97/ecommerce_website',
     gradient: 'web-developer',

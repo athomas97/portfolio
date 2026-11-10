@@ -6,9 +6,39 @@ function Footer() {
         <div className="contact-container" id="contact">
             <h1 className="sub-title-outline"> CONTACT </h1>
             <div className="social-links-container">
-                <img src={`${process.env.PUBLIC_URL}/img/contact/linkedin.png`} className="social-img" alt="LinkedIn"/>
-                <img src={`${process.env.PUBLIC_URL}/img/contact/github.png`} className="social-img" alt="GitHub"/>
-                <img src={`${process.env.PUBLIC_URL}/img/contact/email.png`} className="social-img" alt="Email"/>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ally-kyle-thomas/"
+                  style={{ display: "contents" }}
+                >
+                  <img
+                    src={`${process.env.PUBLIC_URL}/img/contact/linkedin.png`}
+                    className="social-img"
+                    alt="LinkedIn"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://github.com/athomas97"
+                  style={{ display: "contents" }}
+                >
+                  <img
+                    src={`${process.env.PUBLIC_URL}/img/contact/github.png`}
+                    className="social-img"
+                    alt="GitHub"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="mailto:allythomas97@gmail.com"
+                  style={{ display: "contents" }}
+                >
+                  <img
+                    src={`${process.env.PUBLIC_URL}/img/contact/email.png`}
+                    className="social-img"
+                    alt="Email"
+                  />
+                </a>
             </div>
         </div>
     </footer>

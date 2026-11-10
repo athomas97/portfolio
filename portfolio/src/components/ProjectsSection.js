@@ -66,13 +66,6 @@ function ProjectsSection() {
                             </div>
                             <div className="project-description">
                                 <p>{project.description}</p>
-                                <br/>
-                                <p><strong>Highlights:</strong></p>
-                                <ul>
-                                    {project.highlights.map((highlight, index) => (
-                                        <li key={index}>{highlight}</li>
-                                    ))}
-                                </ul> 
                             </div>
                             <div className="buttons-section">
                                 <div>

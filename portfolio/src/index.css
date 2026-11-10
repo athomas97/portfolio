@@ -13,7 +13,7 @@
     --h1-font-size: 82px;
     --h2-font-size: 40px;
     --h3-font-size: 20px;
-    --p-font-size: 15px;
+    --p-font-size: 13px;
     --border-radius-medium: 20px;
     --border-radius-large: 30px;
 }
@@ -85,7 +85,7 @@ p, .nav-links, button, th, td, ul {
     font-family: 'Fugaz One';
     font-style: normal;
     font-weight: 400;
-    font-size: var(--h1-font-size);
+    font-size: clamp(1.75rem, 8vw, var(--h1-font-size));
     text-shadow: 0px 0px 40px var(--semi-transparent-white);
 }
 
@@ -96,7 +96,7 @@ p, .nav-links, button, th, td, ul {
     font-family: 'Fugaz One';
     font-style: normal;
     font-weight: 400;
-    font-size: var(--h1-font-size);
+    font-size: clamp(1.75rem, 8vw, var(--h1-font-size));
     color: var(--semi-transparent-purple);
     -webkit-text-stroke: 2px white;
     text-stroke: 2px white;
@@ -425,7 +425,7 @@ button:hover {
 
     &:hover {
         transform: scale(1.02);
-        background-color: rgba(255, 255, 255, 0.08);
+        background-color: rgba(255, 255, 255, 0.03);
         box-shadow: 0 0 50px rgba(255, 255, 255, 0.06);
     }
     &::after, &::before {
@@ -496,11 +496,13 @@ button:hover {
 
 .project-header {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 10px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    padding: 1% 0%;
 
     h2 {
         font-size: 30px;
@@ -514,7 +516,7 @@ button:hover {
     }
     tbody {
         display: flex;
-        gap: 20px;
+        gap: 5px;
     }
     tr {
         display: flex;
@@ -527,21 +529,25 @@ button:hover {
 
 .technology-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     font-size: 20px;
     cursor: default;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 10px;
+    background-color: rgba(250, 250, 250, 0.05);
     transform: scale(1);
     transition: 0.2s ease-in-out;
 
     &:hover {
-        transform: scale(1.10);
+        transform: scale(1.07);
     }
     img {
         display: block;
-        width: 30px;
+        width: 15px;
         height: auto;
         object-fit: contain;
     }
@@ -550,7 +556,6 @@ button:hover {
 .project-description {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: flex-start;
 
     ul li {
@@ -562,7 +567,6 @@ button:hover {
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    margin-top: 5%;
 
     div {
         flex-grow: 1;
@@ -599,12 +603,11 @@ button:hover {
     margin: 0;
 }
 
-@media (max-width: 1750px) {
+@media (max-width: 1210px) {
     /* Projects Section */
     .projects-section {
         grid-template-columns: minmax(0, 1fr);
     }
-
     .projects-section .img-container img,
     .projects-section .img-container video {
         border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
@@ -616,28 +619,16 @@ button:hover {
         display: none;
     }
 
-    /* Projects Section */
-    .technology-card {
-        flex-direction: row;
-
-        img {
-            width: 20px;
-        }
-    }
-
     /* Hero Section */
     .home-container {
         grid-template-columns: 1fr;
     }
-
     .home-container > :first-child {
         order: 2;
     }
-
     .home-container > :last-child {
         order: 1;
     }
-
     .home-container img {
         max-width: 100%;
         max-height: 400px;
@@ -645,7 +636,6 @@ button:hover {
         height: auto;
         object-fit: contain;
     }
-
     #about-container {
         text-align: center;
     }
@@ -660,6 +650,7 @@ button:hover {
         display: none
     }
 }
+
 /* Animations */
 @property --angle {
     syntax: '<angle>';

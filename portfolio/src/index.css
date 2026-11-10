@@ -611,7 +611,11 @@ button:hover {
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 600px) {
+=======
+@media (max-width: 800px) {
+>>>>>>> main
     .scroll-button {
         display: none;
     }
@@ -651,6 +655,15 @@ button:hover {
     }
 }
 
+@media (max-width: 650px) {
+    /* Navbar */
+    #nav-bar {
+        align-self: center;
+    }
+    .nav-links {
+        display: none
+    }
+}
 /* Animations */
 @property --angle {
     syntax: '<angle>';

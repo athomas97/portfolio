@@ -10,6 +10,7 @@ function App() {
       <a href="#nav-bar">
         <img
           src={`${process.env.PUBLIC_URL}/img/scroll-up.png`}
+          alt="scroll-up-btn"
           class="scroll-button"
         />
       </a>

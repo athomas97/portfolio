@@ -46,23 +46,17 @@ function ProjectsSection() {
                         <div className="project-info">
                             <div className="project-header">
                                 <h2>{project.title}</h2>
-                                <table>
-                                    <tbody>
-                                        {project.technology.map((technology) => (
-                                            <tr key={technology.name}>
-                                                <td>
-                                                    <div className="technology-card">
-                                                        <img
-                                                            src={technology.image}
-                                                            alt=""
-                                                        />
-                                                        <p>{technology.name}</p>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
+                                <div>
+                                    {project.technology.map((technology) => (
+                                        <div className="technology-card">
+                                            <img
+                                                src={technology.image}
+                                                alt=""
+                                            />
+                                            <p>{technology.name}</p>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                             <div className="project-description">
                                 <p>{project.description}</p>

@@ -507,27 +507,17 @@ button:hover {
     padding-top: 5px;
     padding-bottom: 10px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
 
     h2 {
         font-size: 30px;
     }
-    table {
-        width:0.1%;
-        white-space: nowrap;
-        margin: 0;
-        color: rgba( 255, 255, 255, 0.18 );
-        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
-    }
-    tbody {
+    & > div {
         display: flex;
-        gap: 5px;
-    }
-    tr {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: none;
+        flex-wrap: wrap;
+        column-gap: 5px;
+        row-gap: 5px;
+        width: 100%;
     }
 }
 

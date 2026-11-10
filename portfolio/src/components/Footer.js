@@ -8,6 +8,7 @@ function Footer() {
             <div className="social-links-container">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.linkedin.com/in/ally-kyle-thomas/"
                   style={{ display: "contents" }}
                 >
@@ -19,6 +20,7 @@ function Footer() {
                 </a>
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/athomas97"
                   style={{ display: "contents" }}
                 >
@@ -30,6 +32,7 @@ function Footer() {
                 </a>
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="mailto:allythomas97@gmail.com"
                   style={{ display: "contents" }}
                 >

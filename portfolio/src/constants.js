@@ -38,7 +38,6 @@ export const PROJECTS = {
     description: 'Chit Chat is a full-stack, real-time chatroom application built with Python, Flask, SQLAlchemy, and PostgreSQL. Features a secure user authentication system with account creation and deletion, alongside real-time messaging powered by Socket.IO',
     technology: [TECHNOLOGIES.FLASK, TECHNOLOGIES.PYTHON, TECHNOLOGIES.SQLALCHEMY],
     image: `${process.env.PUBLIC_URL}/img/projects/chatroom.png`,
-    liveDemoLink: '',
     liveDemoLink: 'https://chit-chat-ci7f.onrender.com/chatroom',
     codeLink: 'https://github.com/athomas97/chatroom_app',
     gradient: 'video-editor',

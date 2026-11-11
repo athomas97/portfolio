@@ -46,7 +46,7 @@ function ProjectsSection() {
                         <div className="project-info">
                             <div className="project-header">
                                 <h2>{project.title}</h2>
-                                <div>
+                                <div style={{ display: "flex" }}>
                                     {project.technology.map((technology) => (
                                         <div className="technology-card">
                                             <img

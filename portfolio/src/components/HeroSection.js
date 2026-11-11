@@ -1,4 +1,5 @@
 import React from 'react';
+import { TECHSTACK } from '../constants';
 
 function HeroSection() {
     return (
@@ -9,12 +10,26 @@ function HeroSection() {
                         <h1 id="hi-im-text">HI IM </h1>
                         <h1 id="ally-text">ALLY,</h1>
                     </div>
-                    <p>Personal description here...</p>
+                    <p>
+                        A Canada-based web developer combining a background in 
+                        Computer Information Systems and Motion Graphics to build 
+                        visually engaging, user-focused websites
+                    </p>
                 </div>
-                <div id="roles-container">
-                    <div className="web-developer">WEB DESIGNER</div>   
-                    <div className="ux">UX DESIGNER</div>
-                    <div className="video-editor">VIDEO EDITOR</div>                                         
+                <div>
+                    <div className='tech-stack'>
+                        {TECHSTACK.map((technology) => (
+                            <div className="technology-card" key={technology.name}>
+                                <img src={technology.image} alt="" />
+                                <p>{technology.name}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div id="roles-container">
+                        <div className="web-developer">WEB DESIGNER</div>   
+                        <div className="ux">UX DESIGNER</div>
+                        <div className="video-editor">VIDEO EDITOR</div>                                         
+                    </div>
                 </div>
             </div>
             <div id="about-img-container">

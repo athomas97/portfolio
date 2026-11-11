@@ -163,10 +163,6 @@ p, .nav-links, button, th, td, ul {
         var(--ux-color-2) 100%
     );
 }
-.hover-underline-animation-bluegreen:hover::after, .hover-underline-animation-yellowpink:hover::after, .hover-underline-animation-bluecyan:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
 
 
 /* Buttons */
@@ -181,10 +177,6 @@ button {
     transition: 0.2s ease-in-out;
 }
 
-button:hover {
-    transform: scale(1.05);
-}
-
 .secondary-button {
     border: 1px solid white;
     background: rgba(11, 7, 16, 0.703);
@@ -194,10 +186,6 @@ button:hover {
         border 0.2s ease,
         background 0.2s ease;
 
-    &:hover {
-        border: 1px solid transparent;
-        background: rgba(11, 7, 16, 0.952);
-    }
     &::after, &::before {
         position: absolute;
         inset: -1px;
@@ -228,11 +216,6 @@ button:hover {
             linear-gradient(#fff 0 0);
         mask-composite: exclude;
     }
-    &:hover::after,
-    &:hover::before {
-        opacity: 1;
-        animation-play-state: running;
-    }
 }
 
 /* Scroll Button */
@@ -252,11 +235,6 @@ button:hover {
     transition: .5s;
 }
 
-.scroll-button:hover {
-    filter: drop-shadow(0px 0px 25px rgba(255, 255, 255, 0.2));
-    transform: translateY(-10px);
-}
-
 /* SCROLLBAR */
 ::-webkit-scrollbar {
     width: 10px;
@@ -271,9 +249,7 @@ button:hover {
     border-radius: 50px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #b8b4be;
-}
+
 
 /* Navbar */
 #nav-bar {
@@ -400,15 +376,6 @@ button:hover {
         padding: 0px 22px;
         height: 65.64px;
     }
-    .ux:hover,
-    .video-editor:hover,
-    .web-developer:hover,
-    #roles-container .roles:hover {
-        color: white;
-        background: rgba(255, 255, 255, 0.03);
-        backdrop-filter: blur(2px);
-        box-shadow:inset 0px 0px 0px .5px white;
-    }
 }
 
 /* Tech Stack Section */
@@ -449,11 +416,6 @@ button:hover {
     text-align: left;
     transition: 0.3s;
 
-    &:hover {
-        transform: scale(1.02);
-        background-color: rgba(255, 255, 255, 0.03);
-        box-shadow: 0 0 50px rgba(255, 255, 255, 0.06);
-    }
     &::after, &::before {
         position: absolute;
         inset: -1px;
@@ -483,10 +445,6 @@ button:hover {
             linear-gradient(#fff 0 0) content-box,
             linear-gradient(#fff 0 0);
         mask-composite: exclude;
-    }
-    &:hover::after, &:hover::before {
-        opacity: 1;
-        animation-play-state: running;
     }
     h2, h3, p, ul, li {
         margin: 0;
@@ -558,9 +516,6 @@ button:hover {
     transform: scale(1);
     transition: 0.2s ease-in-out;
 
-    &:hover {
-        transform: scale(1.07);
-    }
     img {
         display: block;
         width: 15px;
@@ -609,11 +564,6 @@ button:hover {
     cursor: pointer;
     filter: drop-shadow(0px 0px 20px var(--very-transparent-white));
     transition: .5s;
-}
-
-.social-img:hover {
-    transform: translateY(-20px);
-    filter: drop-shadow(0px 0px 30px var(--semi-transparent-white));
 }
 
 .sub-title-outline {
@@ -673,6 +623,63 @@ button:hover {
     }
     .nav-links {
         display: none
+    }
+}
+
+/* Hover Animations */
+@media (hover: hover) {
+    .hover-underline-animation-bluegreen:hover::after,
+    .hover-underline-animation-yellowpink:hover::after,
+    .hover-underline-animation-bluecyan:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    button:hover {
+        transform: scale(1.05);
+    }
+    .secondary-button:hover {
+        border: 1px solid transparent;
+        background: rgba(11, 7, 16, 0.952);
+    }
+    .secondary-button:hover::after,
+    .secondary-button:hover::before {
+        opacity: 1;
+        animation-play-state: running;
+    }
+    .scroll-button:hover {
+        filter: drop-shadow(0px 0px 25px rgba(255, 255, 255, 0.2));
+        transform: translateY(-10px);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #b8b4be;
+    }
+    #roles-container .ux:hover,
+    #roles-container .video-editor:hover,
+    #roles-container .web-developer:hover,
+    #roles-container .roles:hover {
+        color: white;
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(2px);
+        box-shadow:inset 0px 0px 0px .5px white;
+    }
+    .projects-section:hover {
+        transform: scale(1.02);
+        background-color: rgba(255, 255, 255, 0.03);
+        box-shadow: 0 0 50px rgba(255, 255, 255, 0.06);
+    }
+    .projects-section:hover::after,
+    .projects-section:hover::before {
+        opacity: 1;
+        animation-play-state: running;
+    }
+    .technology-card:hover {
+        transform: scale(1.07);
+    }
+    .social-img:hover {
+        transform: translateY(-20px);
+        filter: drop-shadow(
+            0px 0px 30px var(--semi-transparent-white)
+        );
     }
 }
 
